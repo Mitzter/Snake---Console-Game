@@ -8,8 +8,10 @@ namespace SimpleSnake.GameObjects.Foods
 {
     public class FoodAsterisk : Food
     {
+        private const int foodPoints = 1;
+        private const char foodSymbol = '*';
 
-        public FoodAsterisk()
+        public FoodAsterisk(Field field) : base(field, foodPoints, foodSymbol)
         {
         }
     }

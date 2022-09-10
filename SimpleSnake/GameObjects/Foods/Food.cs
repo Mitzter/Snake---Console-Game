@@ -11,11 +11,11 @@ namespace SimpleSnake.GameObjects.Foods
         private readonly Random random;
         
         private readonly Field field;
-        protected Food(Field field, int points, char foodSymbol) : base(field.LeftX, field.TopY)
+        protected Food(Field field, int foodPoints, char foodSymbol) : base(field.LeftX, field.TopY)
         {
             this.random = new Random();
             this.FoodSymbol = foodSymbol;
-            this.FoodPoints = points;
+            this.FoodPoints = foodPoints;
             this.field = field;
         }
 
